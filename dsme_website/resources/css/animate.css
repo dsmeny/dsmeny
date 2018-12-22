@@ -1,0 +1,83 @@
+/*css animations*/
+
+.rotateRight{
+    animation-name: anim;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+}
+
+@keyframes anim {
+    from{
+        
+        transform: rotate(-6deg);
+    }
+    
+    to {
+    
+        transform: rotate(0deg);
+        
+    }
+}
+
+.rotateLeft{
+    animation-name: anim;
+    animation-duration: 1.3s;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+}
+
+@keyframes anim {
+    from{
+        
+        transform: rotate(5deg);
+    }
+    
+    to {
+    
+        transform: rotate(0deg);
+        
+    }
+}
+
+.sec1::before{
+    animation: animBottom;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+}
+
+@keyframes animBottom{
+    from{
+        
+        border-bottom: 20px solid var(--main-color);
+        border-left: 20px solid var(--main-color);
+    }
+    
+    to{
+        
+        border-bottom: 0px solid var(--parent-bg-color);
+        border-left: 0px solid var(--parent-bg-color);
+    }
+}
+
+.sec1::after{
+    animation: animTop;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+}
+
+@keyframes animTop{
+    from{
+        
+        border-top: 20px solid var(--main-color);
+        border-right: 20px solid var(--main-color);
+    }
+    
+    to{
+        
+        border-top: 0px solid var(--parent-bg-color);
+        border-right: 0px solid var(--parent-bg-color);
+    }
+}

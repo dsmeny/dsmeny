@@ -1,0 +1,52 @@
+:root{
+    /*---------------------*/
+    /* colors & fonts */
+    /*---------------------*/
+    --main-color: #f2f2f2;
+    --main-bg-color: #20223b; 
+    --parent-bg-color: #414470; 
+         --child1-bg-color: #ed4275;
+         --child2-bg-color: #fc9807;
+         --child3-bg-color: #20223b;
+    --font-primary: 'Open Sans', sans-serif;
+    /*---------------------*/
+    /* heights & widths */
+    /*---------------------*/
+    --parent-box-height: 640px;
+    --parent-box-width: 960px;
+        --child-box-height: 330px;
+        --child-box-width: 430px;
+        --child-corner-ht: 140px;
+        --child-corner-wid: 130px;
+    --header-box-height: 120px;
+  
+    /*---------------------*/
+    /* displays */
+    /*---------------------*/
+    --disp-g: grid;
+    --two-col: repeat(2, 1fr);
+    --three-col: repeat(3, 1fr);
+    --four-col: repeat(4, 1fr);
+    --two-row: repeat(2, 1fr);
+    --three-row: repeat(3, 1fr);
+    --four-row: repeat(4, 1fr);
+   
+   /*---------------------*/
+    /* boxes */
+    /*---------------------*/
+    --pseudo-box: 100px 100px;
+    --norepeat: no-repeat;
+    --rotate-deg: rotate(5deg);
+    --shadow: 3px 10px 10px rgba(0,0,0,0.3);
+    --border: 20px solid var(--main-color);
+}
+
+html, body{
+    margin: 0;
+    height: 100%;
+    padding: 0;
+    color: var(--main-color);
+    font-family: var(--font-primary);
+    background-color: var(--main-bg-color);
+
+}
